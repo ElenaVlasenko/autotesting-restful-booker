@@ -1,0 +1,14 @@
+.claude/
+
+# Node / Playwright
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+
+# IDE
+.idea/
+.vscode/
+
+# Local secrets
+.env
