@@ -1,0 +1,20 @@
+{
+  "name": "homework-1-vlasenko",
+  "version": "1.0.0",
+  "description": "ДЗ-1: автотесты REST API Restful Booker на TypeScript + Playwright Test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test --project=api",
+    "test:known-bugs": "PLAYWRIGHT_HTML_OUTPUT_DIR=playwright-report/known-bugs playwright test --project=known-bugs || true",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "ajv": "^8.20.0",
+    "typescript": "^7.0.2"
+  }
+}
