@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://restful-booker.local/schemas/create-booking-response.json",
+  "title": "Created booking (POST /booking)",
+  "type": "object",
+  "required": ["bookingid", "booking"],
+  "properties": {
+    "bookingid": { "type": "integer" },
+    "booking": { "$ref": "booking.json" }
+  }
+}
